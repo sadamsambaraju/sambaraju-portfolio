@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #263247;
+    line-height: 1.7;
+}
+
+nav {
+    background: #14213d;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h2 {
+    color: #fca311;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #fca311;
+}
+
+.hero {
+    background: linear-gradient(135deg, #14213d, #253f68);
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    color: #fca311;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 12px auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #fca311;
+    color: #14213d;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+section {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+section h2 {
+    color: #14213d;
+    margin-bottom: 22px;
+    border-bottom: 3px solid #fca311;
+    display: inline-block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: #f4f6fa;
+    padding: 22px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #fca311;
+}
+
+.card h3 {
+    color: #14213d;
+    margin-bottom: 8px;
+}
+
+.card ul {
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+#contact a {
+    color: #1769aa;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #14213d;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+}
